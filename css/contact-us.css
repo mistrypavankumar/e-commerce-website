@@ -7,7 +7,7 @@
 {
     width: 100%;
     height:400px;
-    background-image:url(images/bg.jpg);
+    background-image:url(../images/bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -105,13 +105,13 @@ ul.topnav .active
 }
 #about
 {
-    background-color: rgba(255, 0, 0,1);
+    background-color: rgba(255, 0, 0,0.8);
 }
-/*#about:hover
+#about:hover
 {
     background-color:rgba(255, 0, 0, 1);
-}*/
-input[type=text]
+}
+input[type=search]
 {    
     margin-top: 9px;
     display: block;
@@ -122,7 +122,7 @@ input[type=text]
     border-radius: 8px;
     font-size: 16px;
     background-color: white;
-    background-image: url(search-icon.png);
+    background-image: url(../images/search-icon.png);
     
     background-size: 15px;
     background-repeat: no-repeat;
@@ -131,7 +131,7 @@ input[type=text]
     -webkit-transition: width 0.4s ease-in-out;
     transition: 0.4s;
 }
-input[type=text]:focus
+input[type=search]:focus
 {
     width: 470px;
 }
@@ -146,7 +146,7 @@ input[type=text]:focus
 }
 .img
 {
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/ab.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/ab.jpg);
    background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -314,16 +314,10 @@ label
     color: white;
     font-size: 30px;
 }
-input[type=email]
+.txt-1
 {
-    height: 33px;
-    width: 200px;
-    padding-left: 5px;
-    font-size: 15px;
-    border-top-left-radius: 10px;
-   
+    height: 31px;
     
-
 }
 input[type=submit]
 {
@@ -358,14 +352,14 @@ input[type=submit]:hover
 {
       float: right;
     margin-top:-70px;
-    margin-right: 200px;
+    margin-right: 150px;
     font-size: 25px;
     
 }
 .icon-link
 {
     
-    margin-left: 900px;
+    margin-left: 950px;
     margin-top: 25px;
 }
 .icon-link span a
@@ -376,4 +370,138 @@ input[type=submit]:hover
 .icon-link span a:hover{
     color: blue;
 }
+.div1
+{
+    width: 650px;
+    height: 350px;
+    margin-top: 150px;
+    margin-left: 100px;
+    
+}
+.f1
+{
+    border: 1px solid gray;
+    padding: 15px;
+    width: 240px;
+    border-radius: 10px;
+    margin-left: 30px;
+    
+}
+.f2
+{
+    border: 1px solid gray;
+    border-radius:10px;
+    width:240px;
+    padding: 15px;
+    margin-left: 40px;
+}
+.f3
+{
+    margin-left: 30px;
+    padding: 15px;
+    width: 560px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.f4
+{
+    margin-left: 30px;
+    width: 560px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    height: 100px;
+    text-align: justify;
+}
+.button
+{
+    width: 150px;
+    padding: 10px;
+    margin-left: 40px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+}
+.button:hover
+{
+    background-color: #2760a5;
+    border: none;
+   box-shadow: 5px 5px rgba(0,0,0,0.5);
 
+}
+.contact-img
+{
+    float: right;
+    margin-right: 150px;
+    margin-top: -350px;
+}
+.div-a
+{
+    width: 500px;
+    margin-left: 100px;
+    border: 1px solid gray;
+    height: 190px;
+}
+#icon1
+{
+    width: 100px;
+    height: 100px;
+    border: 2px solid dodgerblue;
+    border-radius: 100px;
+    margin-left: 190px;
+    margin-top: 40px;
+}
+#icon1 i
+{
+    padding: 25px;
+}
+#icon1 p
+{
+    padding: 10px;
+    margin-left: -70px;
+    
+}
+#icon1:hover
+{
+    background-color: dodgerblue;
+    
+}
+.div-b
+{
+    width: 500px;
+    margin-left: 700px;
+    border: 1px solid gray;
+    height: 190px;
+    margin-top: -192px;
+}
+#icon2
+{
+    width: 100px;
+    height: 100px;
+    border: 2px solid dodgerblue;
+    border-radius: 100px;
+    margin-left: 190px;
+    margin-top: 40px;
+}
+#icon2 i
+{
+    padding: 34px;
+}
+#icon2 p
+{
+    padding: 10px;
+    margin-left: -70px;
+    
+}
+#icon2:hover
+{
+    background-color: dodgerblue;
+    
+}
+#location p
+{
+   
+    width: 400px;
+    margin-left: -150px;
+    margin-top: -20px;
+}
