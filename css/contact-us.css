@@ -69,10 +69,10 @@ ul.topnav
     position: -webkit-sticky;
     position: sticky;
     top:0;
-}
-ul.topnav li
-{
-    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999999;
 }
 ul.topnav li a
 {
@@ -113,8 +113,10 @@ ul.topnav .active
 }
 input[type=search]
 {    
-    margin-top: 9px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
     width: 130px;
     border: none;
     position: relative;
@@ -123,7 +125,6 @@ input[type=search]
     font-size: 16px;
     background-color: white;
     background-image: url(../images/search-icon.png);
-    
     background-size: 15px;
     background-repeat: no-repeat;
     background-position: 10px 10px;
@@ -229,80 +230,6 @@ h2 span
     padding: 10px;
     
 }
-.footer
-{
-    width: 100%;
-    height: 300px;
-    background-color: rgba(0,0,0,0.9);
-    margin-top: 20px;
-}
-.footer1
-{
-    width: 100%;
-    height: 50px;
-    background-color: black;
-}
-.footer h2
-{
-    color: white;
-    padding: 50px 100px 0px;
-    color: orangered;
-    font-weight: normal;
-}
-.footer h2 span
-{
-    border-bottom-color: deepskyblue;
-    border-bottom-width: 3px;
-    color: white;
-}
-.footer p
-{
-    color: white;
-    font-size: 17px;
-    font-weight: normal;
-    padding: 40px 100px;
-}
-#footer-b
-{
-    text-align: center;
-    
-}
-#footer-b h2
-{
-    margin-top: -280px;
-    margin-left: 120px;
-}
-#useful-link 
-{
-    padding-left:60px;
-    text-align: justify;
-    
-    width: 300px;
-    margin-left: 600px;
-
-    
-
-}
-#useful-link p 
-{
-    
-    padding-bottom: 2px;
-    font-weight: normal;
-    padding-top: 20px;
-   
-    margin-right: 50px;
-    margin-left: -80px;
- 
-}
-#useful-link p a
-{
-    color: white;
-    text-decoration: none;
-}
-#useful-link p a:hover{
-    color: aqua;
-    transition-duration: 1s;
-}
 .form
 {
     float: right;
@@ -344,18 +271,7 @@ input[type=submit]:hover
     text-align: center;
    padding-top: 35px;
 }
-.footer1 span
-{
-    color: orangered;
-}
-#social-link h2
-{
-      float: right;
-    margin-top:-70px;
-    margin-right: 150px;
-    font-size: 25px;
-    
-}
+
 .icon-link
 {
     
@@ -385,7 +301,7 @@ input[type=submit]:hover
     width: 240px;
     border-radius: 10px;
     margin-left: 30px;
-    
+    outline: none;
 }
 .f2
 {
@@ -394,6 +310,7 @@ input[type=submit]:hover
     width:240px;
     padding: 15px;
     margin-left: 40px;
+    outline: none;
 }
 .f3
 {
@@ -402,6 +319,8 @@ input[type=submit]:hover
     width: 560px;
     border-radius: 10px;
     border: 1px solid gray;
+    outline: none;
+
 }
 .f4
 {
@@ -412,6 +331,8 @@ input[type=submit]:hover
     border: 1px solid gray;
     height: 100px;
     text-align: justify;
+    outline: none;
+
 }
 .button
 {
@@ -434,6 +355,9 @@ input[type=submit]:hover
     float: right;
     margin-right: 150px;
     margin-top: -350px;
+}
+#card-section{
+    margin-bottom: 50px;
 }
 .div-a
 {
@@ -505,3 +429,105 @@ input[type=submit]:hover
     margin-left: -150px;
     margin-top: -20px;
 }
+.footer-container{
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.footer-content{
+    width: 90%;
+    height: 50vh;
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: red; */
+}
+.footer-content h2{
+    color: #fff;
+    padding-bottom: 5px;
+    border-bottom: 1px solid orangered;
+
+}
+.footer-a, .footer-b, .footer-c{
+    flex: 3;
+    margin-right: 20px;
+}
+.footer-a p{
+    color: #fff;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+.footer-b ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.footer-b ul li a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.5;
+
+}
+.footer-b ul li a:hover{
+    border-left: 2px solid orangered;
+    padding-left: 10px;
+    transition: 0.5s;
+}
+.footer-c .textbox{
+    margin-top: 20px;
+    width: 250px;
+    height: 35px;
+    border: none;
+    margin-left: 8px;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 30px;
+    font-size: 16px;
+}
+.footer-c .submit{
+    width: 250px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgba(253, 80, 17,0.9);
+    color: #fff;
+}
+
+.footer-c .submit:hover{
+    background-color: rgb(253, 80, 17);
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+
+.footer-c .social-links h2{
+ margin-top: 20px;
+}
+.footer-c .social-links i{
+    font-size: 25px;
+    color: white;
+    margin-top: 20px;
+    margin-right:20px;
+}
+
+.footer-c .social-links i:hover{
+    color: orangered;
+    transition: 0.5s ease-out;
+}
+
+.footer1
+{
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+

@@ -69,10 +69,10 @@ ul.topnav
     position: -webkit-sticky;
     position: sticky;
     top:0;
-}
-ul.topnav li
-{
-    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999999;
 }
 ul.topnav li a
 {
@@ -113,8 +113,6 @@ ul.topnav .active
 }
 input[type=search]
 {    
-    margin-top: 9px;
-    display: block;
     width: 130px;
     border: none;
     position: relative;
@@ -123,13 +121,16 @@ input[type=search]
     font-size: 16px;
     background-color: white;
     background-image: url(../images/search-icon.png);
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-size: 15px;
     background-repeat: no-repeat;
     background-position: 10px 10px;
     padding: 8px 20px 8px 30px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: 0.4s;
+    outline: none;
 }
 input[type=search]:focus
 {
