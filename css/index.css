@@ -124,14 +124,7 @@ ul.topnav .active
     display: flex;
     justify-content: flex-end;
 }
-#about
-{
-    background-color: rgba(255, 0, 0, 0.7);
-}
-#about:hover
-{
-    background-color:rgba(255, 0, 0, 1);
-}
+
 input[type=text]
 {    
     display: block;

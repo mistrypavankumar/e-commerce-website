@@ -94,23 +94,7 @@ ul.topnav .active
 {
     background-color: #4CAF50;
 }
-#about
-{
-    float: right;
-}
-@media screen and (max-width:600px)
-{
-    ul.topnav li.right,ul.topnav img,
-    ul.topnav li {float: none}
-}
-#about
-{
-    background-color: rgba(255, 0, 0,1);
-}
-/*#about:hover
-{
-    background-color:rgba(255, 0, 0, 1);
-}*/
+
 input[type=text]
 {    
     display: flex;
@@ -170,7 +154,7 @@ h2 span
 {
     border-bottom: 2px solid orange;
 }
-.img p
+.img p 
 {
     text-align: center;
     color: white;
@@ -178,7 +162,7 @@ h2 span
     font-size: 20px;
     display: block;
 }
-.img p 
+.img p a
 {
     color: white;
     text-decoration: none;
