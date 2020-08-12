@@ -153,6 +153,86 @@ input[type=text]:focus
     width: 130px;
     height: 40px;
 }
+
+/* //mobile view navigation // */
+.toggle{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    display: none;
+
+}
+.bar1,.bar2,.bar3{
+    width: 40px;
+    height: 5px;
+    background-color: #ffff;
+    opacity: 0.8;
+    margin-top: 6px;
+}
+
+#navbar{
+    display: none;
+}
+
+#navbar nav{
+    width: 270px;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#navbar ul{
+    list-style: none;
+}
+#navbar ul li{
+    margin: 50px;
+
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.7;
+    font-size: 25px;    
+}
+#navbar ul li a:hover{
+    opacity: 1;
+    transition: 0.5s ease-out;
+}
+
+.closebtn{
+    position: absolute;
+    top:20px;
+    right: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0.7;
+}
+.closebtn:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
 .container
 {   
     width: 80%;
@@ -344,8 +424,15 @@ input[type=text]:focus
     background-color: black;
 }
 
+/* Media querry */
 
 @media screen and (max-width:1200px){
+    .toggle{
+        display: block;
+    }
+    #navbar{
+        display: block;
+    }
     .container .wrapper{
         width: 300px;
         margin: 10px;
